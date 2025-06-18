@@ -32,5 +32,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dein-image-name:latest
           platforms: linux/amd64,linux/arm64,linux/arm/v7
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rfid-mqtt:latest
