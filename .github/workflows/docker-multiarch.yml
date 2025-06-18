@@ -3,7 +3,7 @@ name: Build and Push Multi-Arch Docker Image
 on:
   push:
     branches:
-      - main  # Oder dein default-Branch
+      - main
 
 jobs:
   build-and-push:
@@ -33,4 +33,4 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7
-          tags: ${{ secrets.DOCKER_USERNAME }}/rfid-mqtt:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/rfid-mqtt-docker:latest
